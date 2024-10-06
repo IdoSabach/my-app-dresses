@@ -1,7 +1,5 @@
-export default function Dress(){
-  return(
-    <>
-    
-    </>
+export default function Dress() {
+  return (
+    <>Dresses</>
   )
 }
