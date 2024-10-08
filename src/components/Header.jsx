@@ -43,9 +43,9 @@ export default function Header() {
         {isOpen ? (
           <span className="text-2xl fixed">✖</span>
         ) : (
-          <div className="flex flex-col space-y-2">
+          <div className="flex flex-col space-y-2 items-end justify-end">
             <div className="w-6 h-0.5 bg-black"></div>
-            <div className="w-6 h-0.5 bg-black"></div>
+            <div className="w-4 h-0.5 bg-black"></div>
           </div>
         )}
       </button>

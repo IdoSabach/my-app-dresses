@@ -1,5 +1,22 @@
-export default function HeroSection(){
-  return(
-    <section>HeroSection Page</section>
-  )
+import Link from "next/link";
+
+export default function HeroSection() {
+  return (
+    <section className="relative">
+      <video autoPlay loop muted width="600" className="z-0 w-full">
+        <source src="/video/vid.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <h1 className="absolute top-0 left-0 text-black text-sm md:text-3xl font-medium p-4 z-50 flex flex-col md:gap-2">
+        Fall Winter 2025 Collection
+        <Link
+          href="/dress"
+          className="text-lg hover:bg-black hover:text-white font-light tracking-widest md:text-2xl flex flex-col md:w-1/2"
+        >
+          DRESSES
+          {/* <span className="h-0.5 absolute bg-black md:w-2/5 w-1/2 md:transform translate-y-7" /> */}
+        </Link>
+      </h1>
+    </section>
+  );
 }

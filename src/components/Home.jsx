@@ -8,7 +8,7 @@ import SwiperForBest from "./componentsForHome/SwiperForBest"
 
 export default function Home(){
   return(
-    <main>
+    <main className="flex flex-col gap-3 items-center">
       <HeroSection />
       <Category />
       <SwiperForBest />
