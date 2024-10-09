@@ -11,7 +11,7 @@ export default function HeroSection() {
         Fall Winter 2025 Collection
         <Link
           href="/dress"
-          className="text-lg hover:bg-black hover:text-white font-light tracking-widest md:text-2xl flex flex-col md:w-1/3"
+          className="text-lg hover:bg-black hover:text-white font-light tracking-widest md:text-2xl flex flex-col md:w-1/3 border-b border-black"
         >
           DRESSES
           {/* <span className="h-0.5 absolute bg-black md:w-2/5 w-1/2 md:transform translate-y-7" /> */}
