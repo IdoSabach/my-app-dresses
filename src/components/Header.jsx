@@ -22,18 +22,19 @@ export default function Header() {
             quality={75}
             loading="lazy"
             className="w-24 md:w-44 z-50"
+            onClick={toggleMenu}
           />
         </Link>
       </section>
-      <section className="hidden md:flex gap-8 text-xl font-semibold">
+      <section className="hidden md:flex gap-8 text-sm font-semibold">
         <Link href="/" className="hover:underline">
-          Home
+          HOME
         </Link>
         <Link href="/about" className="hover:underline">
-          About
+          ABOUT
         </Link>
         <Link href="/dress" className="hover:underline">
-          Dresses
+          DRESSES
         </Link>
       </section>
       <button
@@ -57,10 +58,10 @@ export default function Header() {
         <>
           <div
             className="fixed inset-0 bg-black opacity-50 z-40"
-            onClick={toggleMenu} // סוגר את התפריט אם לוחצים על המסך כהה
+            onClick={toggleMenu}
           ></div>
           <div className="fixed inset-0 bg-white z-40 flex flex-col text-black pt-12">
-            <div className="flex flex-col gap-4 text-lg font-semibold p-4">
+            <div className="flex flex-col gap-6 text-lg font-semibold p-4">
               <section>
                 <Link
                   href="/"
