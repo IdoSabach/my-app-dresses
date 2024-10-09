@@ -1,5 +1,4 @@
 "use client";
-// import Image from "next/image";
 import React, { useEffect, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -13,6 +12,7 @@ import "./swiper.css";
 
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import Image from "next/image"; // ייבוא Image
 
 const photoArr = [
   "/Dress project/HomePage/8D8F5314-13E7-42E0-81A9-F5790339DC18_result.webp",
@@ -54,13 +54,12 @@ export default function App() {
       pagination={{
         clickable: true,
       }}
-      // navigation={true}
       modules={[Autoplay, Navigation]}
       className="mySwiper"
     >
       {photoArr.map((photo, index) => (
         <SwiperSlide key={index}>
-          <img
+          <Image
             src={photo}
             alt={`Photo ${index}`}
             width={300}
@@ -68,7 +67,7 @@ export default function App() {
             quality={75}
             loading="lazy"
             className="object-cover w-96 h-96"
-          ></img>
+          />
         </SwiperSlide>
       ))}
     </Swiper>
@@ -88,13 +87,12 @@ export default function App() {
       pagination={{
         clickable: true,
       }}
-      // navigation={true}
       modules={[Autoplay, Navigation]}
       className="mySwiper"
     >
       {photoArr.map((photo, index) => (
         <SwiperSlide key={index}>
-          <img
+          <Image
             src={photo}
             alt={`Photo ${index}`}
             width={500}
@@ -102,14 +100,11 @@ export default function App() {
             quality={75}
             loading="lazy"
             className="object-cover w-96 h-96"
-          ></img>
+          />
         </SwiperSlide>
       ))}
     </Swiper>
   );
-  return (
-    <>
-      {isDesktop ? desktop() : phone()}
-    </>
-  );
+
+  return <>{isDesktop ? desktop() : phone()}</>;
 }
