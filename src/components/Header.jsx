@@ -11,21 +11,21 @@ export default function Header() {
   };
 
   return (
-    <header className="flex items-center justify-between md:p-6 md:pl-12 md:pr-12 p-4">
-      <section>
+    <header className="sticky top-0 flex items-center justify-between md:p-3 md:pl-8 md:pr-8 p-2 pl-4 pr-4 z-50 bg-white">
+      <section className="z-50">
         <Link href="/">
           <Image
             src="/logo/NeriyaLogo.png"
             alt="logo"
-            width={250}
+            width={120}
             height={150}
             quality={75}
             loading="lazy"
-            className="w-36 md:w-60"
+            className="w-24 md:w-44 z-50"
           />
         </Link>
       </section>
-      <section className="hidden md:flex gap-8 text-2xl font-semibold">
+      <section className="hidden md:flex gap-8 text-xl font-semibold">
         <Link href="/" className="hover:underline">
           Home
         </Link>
@@ -41,9 +41,12 @@ export default function Header() {
         onClick={toggleMenu}
       >
         {isOpen ? (
-          <span className="text-2xl fixed">✖</span>
+          <div className="flex flex-col -space-y-0.5 z-50">
+            <div className="w-6 h-0.5 bg-black transform rotate-45"></div>
+            <div className="w-6 h-0.5 bg-black transform -rotate-45"></div>
+          </div>
         ) : (
-          <div className="flex flex-col space-y-2 items-end justify-end">
+          <div className="flex flex-col space-y-2 items-end justify-end z-50">
             <div className="w-6 h-0.5 bg-black"></div>
             <div className="w-4 h-0.5 bg-black"></div>
           </div>
@@ -53,32 +56,41 @@ export default function Header() {
       {isOpen && (
         <>
           <div
-            className="fixed inset-0 bg-black opacity-65 z-40 md:opacity-0"
-            onClick={toggleMenu}
+            className="fixed inset-0 bg-black opacity-50 z-40"
+            onClick={toggleMenu} // סוגר את התפריט אם לוחצים על המסך כהה
           ></div>
-
-          <div className="shadow-md absolute right-0 h-full bottom-0 md:hidden bg-white text-black p-10 z-50">
-            <button onClick={toggleMenu} className="p-0 fixed top-4 right-4">
-              <span className="text-2xl">X</span>
-            </button>
-            <div className="flex flex-col gap-6 text-lg font-semibold">
-              <Link href="/" className="hover:underline" onClick={toggleMenu}>
-                Home
-              </Link>
-              <Link
-                href="/dress"
-                className="hover:underline"
-                onClick={toggleMenu}
-              >
-                Dresses
-              </Link>
-              <Link
-                href="/about"
-                className="hover:underline"
-                onClick={toggleMenu}
-              >
-                About
-              </Link>
+          <div className="fixed inset-0 bg-white z-40 flex flex-col text-black pt-12">
+            <div className="flex flex-col gap-4 text-lg font-semibold p-4">
+              <section>
+                <Link
+                  href="/"
+                  onClick={toggleMenu}
+                  className="flex flex-row items-center justify-between"
+                >
+                  HOME
+                  <span>{">"}</span>
+                </Link>
+              </section>
+              <section>
+                <Link
+                  href="/dress"
+                  onClick={toggleMenu}
+                  className="flex flex-row items-center justify-between"
+                >
+                  DRESSES
+                  <span>{">"}</span>
+                </Link>
+              </section>
+              <section>
+                <Link
+                  href="/about"
+                  onClick={toggleMenu}
+                  className="flex flex-row items-center justify-between"
+                >
+                  ABOUT
+                  <span>{">"}</span>
+                </Link>
+              </section>
             </div>
           </div>
         </>
