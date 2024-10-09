@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function HeroSection() {
   return (
     <section className="relative">
-      <video autoPlay loop muted width="2500" className="z-0">
+      <video autoPlay loop muted width="2500" className="z-0" controls={false}>
         <source src="/video/vid.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
