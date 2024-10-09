@@ -1,5 +1,7 @@
-export default function Contact(){
-  return(
-    <section>Contact Page</section>
-  )
+export default function Contact() {
+  return (
+    <section>
+      
+    </section>
+  );
 }

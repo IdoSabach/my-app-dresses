@@ -13,9 +13,9 @@ export default function Home(){
       <Category />
       <SwiperForBest />
       {/* <Recommendations /> */}
-      <AdditionalServices />
-      <AboutShort />
-      <Contact />
+      {/* <AdditionalServices /> */}
+      {/* <AboutShort /> */}
+      {/* <Contact /> */}
     </main>
   )
 }
