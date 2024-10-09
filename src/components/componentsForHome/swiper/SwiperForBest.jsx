@@ -48,7 +48,7 @@ export default function App() {
       centeredSlides={true}
       loop={true}
       autoplay={{
-        delay: 1500,
+        delay: 2500,
         disableOnInteraction: false,
       }}
       pagination={{
@@ -77,12 +77,12 @@ export default function App() {
   const desktop = () => (
     <Swiper
       grabCursor={true}
-      slidesPerView={3.5}
+      slidesPerView={4}
       spaceBetween={10}
       centeredSlides={true}
       loop={true}
       autoplay={{
-        delay: 1500,
+        delay: 2500,
         disableOnInteraction: false,
       }}
       pagination={{
