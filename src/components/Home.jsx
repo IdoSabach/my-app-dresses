@@ -4,7 +4,7 @@ import Category from "./componentsForHome/Category"
 import Contact from "./componentsForHome/Contact"
 import HeroSection from "./componentsForHome/HeroSection"
 import Recommendations from "./componentsForHome/Recommendations"
-import SwiperForBest from "./componentsForHome/SwiperForBest"
+import SwiperForBest from "./componentsForHome/swiper/SwiperForBest"
 
 export default function Home(){
   return(
@@ -12,7 +12,7 @@ export default function Home(){
       <HeroSection />
       <Category />
       <SwiperForBest />
-      <Recommendations />
+      {/* <Recommendations /> */}
       <AdditionalServices />
       <AboutShort />
       <Contact />
