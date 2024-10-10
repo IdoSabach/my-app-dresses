@@ -99,8 +99,44 @@ const whiteFloral = [
   "/Dress project/White floral dress/bc8b97f0-0317-483e-9b2d-095834c5c3f4_result.webp",
   "/Dress project/White floral dress/IMG_3577_result.webp",
 ];
+const womenModel = [
+  "/Dress project/Black maxi leather dress/27FBC21F-F64C-4BDA-88D3-F65299FC2AB5_result.webp",
+  "/Dress project/White floral dress/241c5077-b5c8-4923-8da7-3df4a49e8ef0_result.webp",
+  "/Dress project/Rat and boa dress/IMG_4788_result.webp",
+  "/Dress project/White floral dress/bc8b97f0-0317-483e-9b2d-095834c5c3f4_result.webp",
+  "/Dress project/Helsa dress/IMG_7767_result.webp",
+  "/Dress project/Classic black dress/IMG_4966_result.webp",
+  "/Dress project/Helsa dress/IMG_7766_result.webp",
+  "/Dress project/Monot yellow dress/IMG_4725_result.webp",
+  "/Dress project/Helsa dress/IMG_4656_result.webp",
+  "/Dress project/Classic black dress/IMG_4996_result.webp",
+  "/Dress project/Rat and boa dress/IMG_4873_result.webp",
+  "/Dress project/Monot yellow dress/IMG_4758_result.webp",
+  "/Dress project/Helsa dress/IMG_5052_result.webp",
+];
+
+const dresses = [
+  "/Dress project/Black dress open back/IMG_5797_result.webp",
+  "/Dress project/Pink mini dress/15CEDA9F-FA72-4C3E-8EDF-93E2610C4760_result.webp",
+  "/Dress project/Black jumpsuit/IMG_5812_result.webp",
+  "/Dress project/Midi red dress/IMG_5783_result.webp",
+  "/Dress project/Black maxi leather dress/IMG_5825_result.webp",
+  "/Dress project/White floral dress/IMG_3577_result.webp",
+  "/Dress project/Black mini strapless dress/IMG_5859_result.webp",
+  "/Dress project/Monot yellow dress/IMG_5732_result.webp",
+  "/Dress project/Black velvet dress/IMG_5846_result.webp",
+  "/Dress project/Classic black dress/IMG_5785_result.webp",
+  "/Dress project/Helsa dress/IMG_5746_result.webp",
+  "/Dress project/Long sleeve mini dress/IMG_5704_result.webp",
+  "/Dress project/Mini black leather dress/IMG_5839_result.webp",
+  "/Dress project/Mini lace dress/IMG_5413_result.webp",
+  "/Dress project/Mini satin dress/IMG_5393_result.webp",
+  "/Dress project/Rat and boa dress/IMG_5761_result.webp",
+];
 
 export {
+  dresses,
+  womenModel,
   photoArrToHome,
   blackClassic,
   blackJumpsuit,

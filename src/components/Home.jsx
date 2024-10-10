@@ -5,15 +5,15 @@ import Contact from "./componentsForHome/Contact";
 import HeroSection from "./componentsForHome/HeroSection";
 import Recommendations from "./componentsForHome/Recommendations";
 import SwiperForBest from "./componentsForHome/swiper/SwiperForBest";
-import { photoArrToHome } from "@/data/data";
+import { dresses, womenModel } from "@/data/data";
 
 export default function Home() {
   return (
     <main className="flex flex-col gap-3 items-center p-1">
       <HeroSection />
-      <SwiperForBest photoArr={photoArrToHome} numOfSlide={1.3}/>
+      <SwiperForBest photoArr={womenModel} numOfSlide={1.3}/>
       <Category />
-      <SwiperForBest photoArr={photoArrToHome} numOfSlide={2}/>
+      <SwiperForBest photoArr={dresses} numOfSlide={2}/>
       {/* <Recommendations /> */}
       {/* <AdditionalServices /> */}
       {/* <AboutShort /> */}
