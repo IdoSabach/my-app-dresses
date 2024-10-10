@@ -21,7 +21,7 @@ export default function Header() {
               width={120}
               height={150}
               quality={75}
-              loading="lazy"
+              // loading="lazy"
               className="w-24 md:w-44 z-50"
             />
           </Link>

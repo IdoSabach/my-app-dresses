@@ -12,7 +12,7 @@ export default function Category() {
             width={350}
             height={350}
             quality={75}
-            loading="lazy"
+            // loading="lazy"
             className="w-full h-full object-cover"
           />
           <section className="absolute top-0 left-0 text-black p-1 md:text-2xl font-medium md:p-4">
@@ -32,7 +32,7 @@ export default function Category() {
             width={350}
             height={350}
             quality={75}
-            loading="lazy"
+            // loading="lazy"
             className="w-full h-full object-cover"
           />
           <section className="absolute top-0 left-0 text-black p-1 md:text-2xl font-medium md:p-4">
