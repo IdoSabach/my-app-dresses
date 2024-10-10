@@ -1,21 +1,23 @@
-import AboutShort from "./componentsForHome/AboutShort"
-import AdditionalServices from "./componentsForHome/AdditionalServices"
-import Category from "./componentsForHome/Category"
-import Contact from "./componentsForHome/Contact"
-import HeroSection from "./componentsForHome/HeroSection"
-import Recommendations from "./componentsForHome/Recommendations"
-import SwiperForBest from "./componentsForHome/swiper/SwiperForBest"
+import AboutShort from "./componentsForHome/AboutShort";
+import AdditionalServices from "./componentsForHome/AdditionalServices";
+import Category from "./componentsForHome/Category";
+import Contact from "./componentsForHome/Contact";
+import HeroSection from "./componentsForHome/HeroSection";
+import Recommendations from "./componentsForHome/Recommendations";
+import SwiperForBest from "./componentsForHome/swiper/SwiperForBest";
+import { photoArrToHome } from "@/data/data";
 
-export default function Home(){
-  return(
+export default function Home() {
+  return (
     <main className="flex flex-col gap-3 items-center p-1">
       <HeroSection />
+      <SwiperForBest photoArr={photoArrToHome} numOfSlide={1.3}/>
       <Category />
-      <SwiperForBest />
+      <SwiperForBest photoArr={photoArrToHome} numOfSlide={2}/>
       {/* <Recommendations /> */}
       {/* <AdditionalServices /> */}
       {/* <AboutShort /> */}
       {/* <Contact /> */}
     </main>
-  )
+  );
 }

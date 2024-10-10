@@ -14,19 +14,7 @@ import "./swiper.css";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import Image from "next/image"; // ייבוא Image
 
-const photoArr = [
-  "/Dress project/HomePage/8D8F5314-13E7-42E0-81A9-F5790339DC18_result.webp",
-  "/Dress project/HomePage/A9E2B6A2-4258-4DA2-A12A-77E61ABC8CA6_result.webp",
-  "/Dress project/HomePage/bc8b97f0-0317-483e-9b2d-095834c5c3f4_result.webp",
-  "/Dress project/HomePage/DDA2E815-31DB-4C16-BFA7-04017958D577_result.webp",
-  "/Dress project/HomePage/IMG_4725_result.webp",
-  "/Dress project/HomePage/IMG_4788_result.webp",
-  "/Dress project/HomePage/IMG_4901_result.webp",
-  "/Dress project/HomePage/IMG_5413_result.webp",
-  "/Dress project/HomePage/IMG_5778_result.webp",
-];
-
-export default function App() {
+export default function App( {photoArr = [], numOfSlide} ) {
   const [isDesktop, setIsDesktop] = useState(false);
 
   useEffect(() => {
@@ -43,7 +31,7 @@ export default function App() {
   const phone = () => (
     <Swiper
       grabCursor={true}
-      slidesPerView={2}
+      slidesPerView={numOfSlide}
       spaceBetween={10}
       centeredSlides={true}
       loop={true}
