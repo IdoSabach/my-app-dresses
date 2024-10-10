@@ -17,7 +17,7 @@ export default function Category() {
           />
           <section className="absolute top-0 left-0 text-black p-1 md:text-2xl font-medium md:p-4">
             <p>EVENING</p>
-            <p className="text-sm border-b border-black inline-block md:text-xl font-light tracking-widest">
+            <p className="text-xs border-b border-black inline-block md:text-xl font-light tracking-widest">
               Discover
             </p>
           </section>
@@ -37,7 +37,7 @@ export default function Category() {
           />
           <section className="absolute top-0 left-0 text-black p-1 md:text-2xl font-medium md:p-4">
             <p>TAILORED</p>
-            <p className="text-sm border-b border-black inline-block md:text-xl font-light tracking-widest">
+            <p className="text-xs border-b border-black inline-block md:text-xl font-light tracking-widest">
               Discover
             </p>
           </section>
