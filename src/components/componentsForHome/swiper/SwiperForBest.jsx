@@ -53,7 +53,7 @@ export default function App( {photoArr = [], numOfSlide} ) {
             width={300}
             height={300}
             quality={75}
-            loading="lazy"
+            // loading="lazy"
             className="object-cover w-96 h-96"
           />
         </SwiperSlide>
@@ -86,7 +86,7 @@ export default function App( {photoArr = [], numOfSlide} ) {
             width={500}
             height={500}
             quality={75}
-            loading="lazy"
+            // loading="lazy"
             className="object-cover w-96 h-96"
           />
         </SwiperSlide>
