@@ -1,6 +1,7 @@
 import "../styles/style.css"
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import WhatsApp from "@/components/WhatsApp"
 
 
 export const metadata = {
@@ -15,6 +16,7 @@ export default function RootLayout({ children }) {
         <Header />
         <main className="flex-grow">{children}</main>
         <Footer />
+        <WhatsApp />
       </body>
     </html>
   );

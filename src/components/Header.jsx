@@ -30,11 +30,11 @@ export default function Header() {
           <Link href="/" className="hover:underline">
             HOME
           </Link>
-          <Link href="/about" className="hover:underline">
-            ABOUT
-          </Link>
           <Link href="/dress" className="hover:underline">
             DRESSES
+          </Link>
+          <Link href="/about" className="hover:underline">
+            ABOUT
           </Link>
         </section>
         <button

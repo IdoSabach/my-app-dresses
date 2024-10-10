@@ -5,7 +5,6 @@ import Contact from "./componentsForHome/Contact"
 import HeroSection from "./componentsForHome/HeroSection"
 import Recommendations from "./componentsForHome/Recommendations"
 import SwiperForBest from "./componentsForHome/swiper/SwiperForBest"
-import WhatsApp from "./WhatsApp"
 
 export default function Home(){
   return(
@@ -17,7 +16,6 @@ export default function Home(){
       {/* <AdditionalServices /> */}
       {/* <AboutShort /> */}
       {/* <Contact /> */}
-      <WhatsApp />
     </main>
   )
 }
