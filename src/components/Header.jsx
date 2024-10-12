@@ -40,6 +40,7 @@ export default function Header() {
         <button
           className="md:hidden flex flex-col items-center justify-center w-8 h-8 focus:outline-none"
           onClick={toggleMenu}
+          aria-label={isOpen ? "open-menu" : "close-menu"}
         >
           {isOpen ? (
             <div className="flex flex-col -space-y-0.5 z-50">
