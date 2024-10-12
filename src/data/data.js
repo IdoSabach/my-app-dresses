@@ -134,7 +134,27 @@ const dresses = [
   "/Dress project/Rat and boa dress/IMG_5761_result.webp",
 ];
 
+const allDresses = [
+  {id:1, dressPhoto:blackOpenBack, name:"Black Dress Open Back"},
+  {id:2, dressPhoto:pinkMini, name:"Pink Mini Dress"},
+  {id:3, dressPhoto:blackJumpsuit, name:"Black Jumpsuit"},
+  {id:4, dressPhoto:miniRed, name:"Mini Red Dress"},
+  {id:5, dressPhoto:blackMaxi, name:"Black Maxi Leather Dress"},
+  {id:6, dressPhoto:whiteFloral, name:"White Floral Dress"},
+  {id:7, dressPhoto:blackMini, name:"Black Mini Strapless Dress"},
+  {id:8, dressPhoto:monotYellow, name:"Monot Yellow Dress"},
+  {id:9, dressPhoto:blackVelvet, name:"Black Velvet Dress"},
+  {id:10, dressPhoto:blackClassic, name:"Classic Black Dress"},
+  {id:11, dressPhoto:helsaDress, name:"Helsa Dress"},
+  {id:12, dressPhoto:longSleeve, name:"Long Sleeve Mini Dress"},
+  {id:13, dressPhoto:miniBlackLeather, name:"Mini Black Leather Dress"},
+  {id:14, dressPhoto:miniLace, name:"Mini Lace Dress"},
+  {id:15, dressPhoto:miniStain, name:"Mini Satin Dress"},
+  {id:16, dressPhoto:ratBow, name:"Rat & Boa Dress"},
+] 
+
 export {
+  allDresses,
   dresses,
   womenModel,
   photoArrToHome,
