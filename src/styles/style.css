@@ -9,3 +9,29 @@
   box-shadow: none;
   /* outline: 1px red solid; */
 }
+
+.photoForDressPage{
+  width: 600px;
+  height: 500px;
+  object-fit: cover;
+}
+
+.photoForDressOnPage{
+  width: 600px;
+  height: 700px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px){
+  .photoForDressPage{
+    width: 600px;
+    height: 350px;
+    object-fit: cover;
+  }
+
+  .photoForDressOnPage{
+    width: 400px;
+    height: 650px;
+    object-fit: cover;
+  }
+}

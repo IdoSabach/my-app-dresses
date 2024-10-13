@@ -5,7 +5,7 @@ export default function Category() {
   return (
     <section className="flex flex-row justify-between gap-2 w-full">
       <section className="relative w-1/2">
-        <Link href="/">
+        <Link href="/dress">
           <Image
             src="/Dress project/Long sleeve mini dress/IMG_5704_result.webp"
             alt="logo"
@@ -25,7 +25,7 @@ export default function Category() {
       </section>
 
       <section className="relative w-1/2">
-        <Link href="/">
+        <Link href="/dress">
           <Image
             src="/Dress project/Mini lace dress/IMG_5413_result.webp"
             alt="logo"
