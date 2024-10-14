@@ -13,7 +13,7 @@ export default function Footer() {
             height={24} 
             className="h-4 w-4" 
           />
-          <p className="text-gray-600">Owned by Neria Abutbul 2025</p>
+          <p className="text-gray-600">Owned by Neriya Abutbul 2025</p>
         </section>
         <section className="flex flex-row gap-1 items-center">
           <Image
